@@ -50,7 +50,7 @@ footer {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr ;
   gap: 20px;
   padding: 20px;
 }
@@ -64,7 +64,7 @@ footer {
 
 
 .sidebar {
-   
+   display: grid;
   background: #c5c1c1;
   padding: 1rem;
   color: black;
@@ -73,11 +73,11 @@ footer {
 
 .categories {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   padding: 20px;
   background: rgb(182, 114, 114);
-  align-items: start;   /* <— keeps titles aligned at the top */
+  align-items: stretch;   /* <— keeps titles aligned at the top */
 }
 
 
@@ -118,6 +118,63 @@ footer {
   border-radius: 5px; /* optional rounding */
 }
 
+.category article {
+  margin-bottom: 15px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.category article img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.category article a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+.sidebar {
+  background: #c5c1c1;
+  padding: 1rem;
+  color: black;
+}
+
+.trending {
+  display: flex;
+  gap: 0px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.trending img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.trending p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.3;
+
+}
+
+.trending a {
+  text-decoration: none;
+  color: black;
+}
+
+.trending a:hover p {
+  text-decoration: underline;
+}
 
 
 
