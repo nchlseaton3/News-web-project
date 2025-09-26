@@ -127,8 +127,8 @@ footer {
 /* Categories */
 .categories {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap: 20px ;
   padding: 20px;
   background: rgb(182, 114, 114);
   align-items: stretch;
@@ -152,9 +152,10 @@ footer {
 .category article a {
   text-decoration: none;
   color: black;
+  background-color: white;
   font-weight: bold;
-  display: block;
-  margin-top: 10px;
+  display: flex;
+  margin-top: 0px;
 }
 
 /* Responsive Design */
